@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { StyledArt } from '../ArtPage/Art.styled';
 import { NavLink } from 'react-router-dom';
 import { BasicCard } from '../BasicCard';
@@ -6,6 +6,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import TabPanel from "@material-ui/core/Box";
+import Paper from "@material-ui/core/Paper";
 
 //card elements for programming projects
 const codeCards = <div className="grid-container">
@@ -35,13 +36,10 @@ const artCards = <div className="grid-container">
 
 </div>;
 
-// function TabPanel(props) {
-//     const { children, value, index, ...other } = props;
-//     return <div {...other}>{value === index && <Box p={3}>{children}</Box>}</div>;
-// }
 
 export default function Projects() {
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = useState(0);
+
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
@@ -49,24 +47,24 @@ export default function Projects() {
     return (
         <div>
             <StyledArt>
-                <AppBar className="tab-labels" position="static">
-                    <Tabs value={value} fullWidth={true} centered={true} onChange={handleChange}
-                        inkBarStyle={{background: 'blue'}}>
-                        <Tab label="code" />
-                        <Tab label="art" />
-                        <Tab label="photography" />
-                    </Tabs>
-                </AppBar>
-                <TabPanel value={value} index={0} >
-                    {codeCards}
-                </TabPanel>
-                <TabPanel value={value} index={1}>
-                    {artCards}
-                </TabPanel>
-                <TabPanel value={value} index={2}>
-                    {/*{photographyCards}*/}
-                </TabPanel>
+                <div className="test">
+                    <AppBar className="tab-labels" position="static">
+                        <Tabs value={value} fullWidth={true} centered={true} onChange={handleChange}>
+                            <Tab label="code" />
+                            <Tab label="art" />
+                            <Tab label="photography" />
+                        </Tabs>
+                    </AppBar>
+                </div>
+                {value == 0 && <>{codeCards}</>}
+                {value == 1 && <>{artCards}</>}
+                {value == 2 && <>{codeCards}</>}
+
+                {/* <Paper>
+                    hello
+                </Paper> */}
+                
             </StyledArt>
         </div>
-    )
+    );
 }
