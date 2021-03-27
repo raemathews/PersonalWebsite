@@ -73,11 +73,14 @@ export const StyledArt = styled.nav`
           color: black;
     }
 
-    .PrivateTabIndicator-colorSecondary-3 {
+
+    [class^="PrivateTabIndicator"] {
         background-color: #ffb140 !important;
+
     }
 
-    .PrivateTabIndicator-root-1 {
-        height: 4px;
+    .MuiTabs-root {
+        border-radius: 30px;
+        font-weight: bold;
     }
 `;

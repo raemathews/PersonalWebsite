@@ -40,8 +40,8 @@ function BodyContent() {
     return (
       <>
         <Hero />
-        <SlideOneIntro />
-        <SlideOneIntro />
+        <SlideOneIntro text="Welcome to my personal website!"/>
+        <SlideOneIntro text="Thanks for stopping by..."/>
         <SlideOneIntro />
       </>
     )
