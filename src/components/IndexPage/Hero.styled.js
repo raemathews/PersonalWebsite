@@ -8,6 +8,8 @@ export const StyledHero = styled.nav`
         position: absolute;
         top: 45%;
         width: 100%;
+        animation-name: fade;
+        animation-duration: 6s;
     }
 
     .contact-button {
@@ -45,4 +47,5 @@ export const StyledHero = styled.nav`
         border: 3px solid white;
         cursor: pointer;
       }
+      
 `;

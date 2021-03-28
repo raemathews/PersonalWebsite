@@ -12,6 +12,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #0C6697;
+
+}
+
+@keyframes fade {
+  0%   {opacity: 0}
+  85%  {opacity: 0}
+  100% {opacity: 100}
+}
+
+@keyframes disappear {
+  0% {display: none}
 }
 
 code {

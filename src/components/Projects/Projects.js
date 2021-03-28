@@ -5,8 +5,7 @@ import { BasicCard } from '../BasicCard';
 import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import TabPanel from "@material-ui/core/Box";
-import Paper from "@material-ui/core/Paper";
+import PageLoader from '../PageLoader';
 
 //card elements for programming projects
 const codeCards = <div className="grid-container">
@@ -46,6 +45,7 @@ export default function Projects() {
 
     return (
         <div>
+            <PageLoader />
             <StyledArt>
                 <div className="test">
                     <AppBar className="tab-labels" position="static">

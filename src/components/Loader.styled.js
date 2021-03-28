@@ -9,4 +9,7 @@ export const StyledLoader = styled.nav`
     font-weight: bold;
     padding-top: 30vh;
 
+    animation-name: disappear;
+    animation-delay: 6s;
+
 `;

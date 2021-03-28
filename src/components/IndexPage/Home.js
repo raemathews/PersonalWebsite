@@ -31,22 +31,22 @@ function BodyContent() {
     { usePageLoader.handleAnimationSwitch() }
   }, [])
 
-  if (usePageLoader.isAnimation) {
-    return (
-      <PageLoader />
-    )
-  }
-  else {
+  // if (usePageLoader.isAnimation) {
+  //   return (
+  //     <PageLoader />
+  //   )
+  // }
+  // else {
     return (
       <>
+        <PageLoader />
         <Hero />
-        <SlideOneIntro text="Welcome to my personal website!"/>
-        <SlideOneIntro text="Thanks for stopping by..."/>
-        <SlideOneIntro />
+        <SlideOneIntro text="Welcome to my personal website."/>
+        <SlideOneIntro text="Thanks for stopping by"/>
       </>
     )
   }
-}
+//}
 
 
 {/**class BodyContent extends React.Component {

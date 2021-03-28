@@ -2,12 +2,15 @@ import styled from 'styled-components';
 
 export const StyledArt = styled.nav`
 
-    padding-top: 14vh;
     align-content: center;
     justify-content: center;
     grid-gap: 1vw;
-    max-width: 1000px;
     padding-left: 10vw;
+    position: absolute;
+    z-index: 0;
+    animation-name: fade;
+    animation-duration: 6s;
+    width: 100vw;
 
     @media (max-width: 1000px) {
         max-width: 700px;
@@ -58,15 +61,6 @@ export const StyledArt = styled.nav`
           }
     }
 
-    .page-loader {
-        animation: disappear 1ms linear 1s normal;
-    }
-      
-    @keyframes disappear {
-        from {display: in-line;}
-        to {display: none;}
-      }
-
     .tab-labels {
           margin-top: 2vh;
           background-color: #e6e9ed;
@@ -83,4 +77,12 @@ export const StyledArt = styled.nav`
         border-radius: 30px;
         font-weight: bold;
     }
+
+    .MuiTab-wrapper {
+        color: #0C6697;
+        font-weight: bold;
+        font-size: 1rem;
+    }
 `;
+
+
