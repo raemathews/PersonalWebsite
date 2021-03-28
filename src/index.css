@@ -15,10 +15,15 @@ body {
 
 }
 
+@keyframes fade-delay {
+  0%   {opacity: 0; margin-top: -6px;}
+  90%  {opacity: 0; margin-top: -6px;}
+  100% {opacity: 100; margin-top: 0px;}
+}
+
 @keyframes fade {
-  0%   {opacity: 0}
-  85%  {opacity: 0}
-  100% {opacity: 100}
+  0%   {opacity: 0; margin-top: -2px;}
+  100% {opacity: 100; margin-top: 0px;}
 }
 
 @keyframes disappear {

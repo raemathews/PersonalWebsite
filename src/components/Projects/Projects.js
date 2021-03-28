@@ -35,6 +35,18 @@ const artCards = <div className="grid-container">
 
 </div>;
 
+//card elements for photography collections
+const photoCards = <div className="grid-container">
+    <NavLink className="portraits" activeClassName="active" exact to={'./portraits'} >
+        <BasicCard className="grid-item" imgSource="kyle" title="Portrait Work" medium="photography"/>
+    </ NavLink>
+
+    <NavLink className="animals" activeClassName="active" exact to={'./animals'} >
+        <BasicCard className="grid-item" imgSource="bird" title="Animal Photography" medium="photography"/>
+    </ NavLink>
+
+</div>;
+
 
 export default function Projects() {
     const [value, setValue] = useState(0);
@@ -56,10 +68,11 @@ export default function Projects() {
                         </Tabs>
                     </AppBar>
                 </div>
+                <div className="options">
                 {value == 0 && <>{codeCards}</>}
                 {value == 1 && <>{artCards}</>}
-                {value == 2 && <>{codeCards}</>}
-
+                {value == 2 && <>{photoCards}</>}
+                </div>
                 {/* <Paper>
                     hello
                 </Paper> */}

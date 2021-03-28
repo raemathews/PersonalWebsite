@@ -5,6 +5,8 @@ import portrait from '../images/portrait.jpg';
 import lorikeet from '../images/lorikeet.jpg'
 import cezanne from '../images/cezanne.jpg';
 import hackbeanpot from '../images/HackBeanpot.png';
+import kyle from '../images/Kyle.png';
+import bird from '../images/birdedit.JPG';
 
 
 export function BasicCard({ imgSource, title, subtitle, medium, dimensions }) {
@@ -22,6 +24,12 @@ export function BasicCard({ imgSource, title, subtitle, medium, dimensions }) {
                 }
                 {imgSource == "HackBeanpot" ?
                     <img className='cardImage' src={hackbeanpot} /> : null
+                }
+                {imgSource == "kyle" ?
+                    <img className='cardImage' src={kyle} /> : null
+                }
+                {imgSource == "bird" ?
+                    <img className='cardImage' src={bird} /> : null
                 }
                 <h1 className="title">{title}</h1>
                 <hr />

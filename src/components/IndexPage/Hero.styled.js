@@ -8,7 +8,7 @@ export const StyledHero = styled.nav`
         position: absolute;
         top: 45%;
         width: 100%;
-        animation-name: fade;
+        animation-name: fade-delay;
         animation-duration: 6s;
     }
 

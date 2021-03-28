@@ -8,9 +8,12 @@ export const StyledArt = styled.nav`
     padding-left: 10vw;
     position: absolute;
     z-index: 0;
-    animation-name: fade;
+    animation-name: fade-delay;
     animation-duration: 6s;
-    width: 100vw;
+    top: 16vh;
+
+    min-width: 80vw;
+
 
     @media (max-width: 1000px) {
         max-width: 700px;
@@ -82,6 +85,15 @@ export const StyledArt = styled.nav`
         color: #0C6697;
         font-weight: bold;
         font-size: 1rem;
+    }
+
+    .MuiTabs-flexContainer {
+        color: black;
+    }
+
+    .options {
+        animation-name: fade;
+        animation-duration: .9s;
     }
 `;
 
