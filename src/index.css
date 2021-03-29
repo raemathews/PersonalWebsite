@@ -26,6 +26,12 @@ body {
   100% {opacity: 100; margin-top: 0px;}
 }
 
+@keyframes hide-fade {
+  0%   {opacity: 0; margin-top: -2px;}
+  90% {opacity: 0; margin-top: -2px}
+  100% {opacity: 100; margin-top: 0px;}
+}
+
 @keyframes disappear {
   0% {display: none}
 }

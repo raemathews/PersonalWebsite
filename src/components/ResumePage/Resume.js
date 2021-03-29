@@ -1,19 +1,25 @@
 import React from 'react';
-import {Document} from 'react-pdf';
+import { Document, Page, } from 'react-pdf';
+import resume from '../../images/Mathews_Raven_Resume.png'
+import PageLoader from '../PageLoader';
+import { StyledPDF } from './PDF.styled';
 
-const resumeContent =
-  <Document
-    file='./Resume.pdf'
-  />;
 
+
+// function Resume() {
+//   return (
+//     <Document file={myResume}>
+//               <Page pageNumber={1} />
+//     </Document>
+//   );
+// }
 
 const Resume = () => {
-
   return (
-    <>
-      {resumeContent}
-    </ >
-  );
-};
-
+    <StyledPDF>
+      <PageLoader className="load"/>
+      <img src={resume}></img>
+    </StyledPDF>
+  )
+}
 export default Resume;

@@ -19,9 +19,7 @@ import Projects from './Projects/Projects';
 const navList = [
   { name: "home", path: '/' },
   {name: "projects", path: '/projects'},
-  /*{ name: "art", path: '/art' },*/
   { name: "resume", path: '/resume' },
-  /*{ name: "loading tester", path: '/test' },*/
   { name: "contact me", path: '/contact' }
 
 ];

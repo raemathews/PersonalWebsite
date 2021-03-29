@@ -68,14 +68,9 @@ export default function Projects() {
                         </Tabs>
                     </AppBar>
                 </div>
-                <div className="options">
                 {value == 0 && <>{codeCards}</>}
                 {value == 1 && <>{artCards}</>}
                 {value == 2 && <>{photoCards}</>}
-                </div>
-                {/* <Paper>
-                    hello
-                </Paper> */}
                 
             </StyledArt>
         </div>
