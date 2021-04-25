@@ -9,10 +9,14 @@ export const StyledPDF = styled.nav`
     left: 25vw;
     animation-name: hide-fade;
     animation-duration: 6s;
-
   }
 
-  .load {
+  .pdf {
+    animation-name: disappear;
+    animation-duration: 6s;
     z-index: 1;
+
   }
+
+
 `;

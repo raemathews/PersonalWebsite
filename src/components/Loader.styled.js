@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const StyledLoader = styled.nav`
 
-    background: #oc6697;
     width: 80vw;
     height: 40vh;
     font-size: 200px;
@@ -11,5 +10,7 @@ export const StyledLoader = styled.nav`
 
     animation-name: disappear;
     animation-delay: 6s;
+
+    z-index: 0;
 
 `;

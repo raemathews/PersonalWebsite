@@ -9,7 +9,7 @@ import PageLoader from '../PageLoader';
 
 //card elements for programming projects
 const codeCards = <div className="grid-container">
-    <NavLink className="lorikeet" activeClassName="active" exact to={'./lorikeet'} >
+    <NavLink className="lorikeet" activeClassName="active" exact to={'./hackbeanpot2021'} >
         <BasicCard className="grid-item" imgSource="HackBeanpot" title="Vaccine Waste" medium="Hack Beanpot 2021"
             dimensions="Interactive web application that tracks wasted COVID-19 vaccine doses" />
     </ NavLink>

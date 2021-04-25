@@ -18,7 +18,7 @@ const Resume = () => {
   return (
     <StyledPDF>
       <PageLoader className="load"/>
-      <img src={resume}></img>
+      <img className="pdf" src={resume}></img>
     </StyledPDF>
   )
 }

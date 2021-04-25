@@ -1,9 +1,12 @@
 import React from 'react';
+import { StyledError } from './Error.styled';
 
 export default class Error extends React.Component {
     render() {
         return (
-            <h1>ERROR</h1>
+            <StyledError>
+                <h1>ERROR</h1>
+            </StyledError>
         )
     }
 }

@@ -16,7 +16,7 @@ function PageLoader() {
 
     return (
         <StyledLoader>
-            <div className="container" style={{ width: '100vw' }} >
+            <div style={{ width: '100vw' }} >
 
                 <Lottie
                     options={defaultOptions}

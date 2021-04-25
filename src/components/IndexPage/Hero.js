@@ -2,6 +2,8 @@ import React from 'react';
 import { StyledHero } from './Hero.styled';
 import { Button } from '../Button';
 import { NavLink } from 'react-router-dom';
+import { Page } from 'react-pdf';
+import PageLoader from '../PageLoader';
 
 export default class Hero extends React.Component {
   render() {

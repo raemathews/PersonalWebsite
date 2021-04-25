@@ -2,16 +2,6 @@ import styled from 'styled-components';
 
 export const StyledHero = styled.nav`
 
-    p {
-        margin-left: 3vw;
-        margin-right: 3vw;
-        position: absolute;
-        top: 45%;
-        width: 100%;
-        animation-name: fade-delay;
-        animation-duration: 6s;
-    }
-
     .contact-button {
         text-decoration: none !important;
     }

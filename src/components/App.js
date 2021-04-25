@@ -14,7 +14,7 @@ import Portrait from './ArtPage/Portrait';
 import Cezanne from './ArtPage/Cezanne';
 import Error from './Error';
 import Projects from './Projects/Projects';
-
+import Hackbeanpot2021 from './Projects/hackbeanpot2021';
 
 const navList = [
   { name: "home", path: '/' },
@@ -41,6 +41,7 @@ function App() {
               <Route path="/projects/art-lorikeet" component={Lorikeet} />
               <Route path="/projects/art-self-portrait" component={Portrait} />
               <Route path="/projects/art/cezanne" component={Cezanne} />
+              <Route path="/hackbeanpot2021" component={Hackbeanpot2021} />
               <Route component={Error} />
             </Switch>
           </div>

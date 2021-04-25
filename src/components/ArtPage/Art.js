@@ -52,16 +52,6 @@ function usePageContent() {
     return { pageContent, toggleContent };
 }
 
-/*custom react hook
-function useLoading() {
-    const [isLoading, setLoading] = useState(true);
-
-    const toggleLoading = () => {
-        setLoading(!isLoading)
-    }
-    return { isLoading, toggleLoading };
-}
-*/
 
 /*art page content*/
 function Art() {
@@ -76,34 +66,5 @@ function Art() {
     )
 }
 
-
-
-/*
-class Art extends React.Component {
-    
-    constructor() {
-        super();
-        this.state = { isLoading: true, pageContent: usePageContent(isLoading) };
-    }
-
-    componentDidMount() {
-        this.setState({ isLoading: false, pageContent: usePageContent(isLoading) });
-    }
-
-    render() {
-        if (!this.state.isLoading) {
-            this.state.isLoading = !this.state.isLoading;
-            return (
-                { pageContent }
-            )
-        }
-        else {
-            return (
-                { pageContent }
-            )
-        }
-    }
-}
-*/
 
 export default Art;

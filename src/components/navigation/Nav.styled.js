@@ -18,6 +18,8 @@ position: absolute;
     padding-top: 0;
     list-style: none;
     padding-right: 20vw;
+    animation-name: fade;
+    animaiton-duration: 2s;
   }
 
   button {
