@@ -3,7 +3,9 @@ import useHorizontal from '@oberon-amsterdam/horizontal/hook';
 import Hero from './Hero';
 import SlideOneIntro from './SlideOneIntro';
 import PageLoader from '../PageLoader';
-import { StyledHome } from './Home.styled.js'
+import { StyledHome } from './Home.styled.js';
+import {Controller, Scene} from "react-scrollmagic";
+import gsap from 'react-gsap';
 
 function useLoadingAnimation() {
   const [isAnimation, setIsAnimation] = useState(true);
@@ -34,12 +36,15 @@ function BodyContent() {
 
   return (
     <>
-      <Hero />
+      <Hero id="horizontal-scroll"/>
       <SlideOneIntro text="Welcome to my personal website." />
       <SlideOneIntro text="Thanks for stopping by" />
     </>
   )
 }
+
+
+
 
 const Home = () => {
   const [container, setContainer] = useState();
@@ -48,7 +53,6 @@ const Home = () => {
   return (
     <div>
       <StyledHome>
-
         <div className="content">
           <div className="container" ref={ref => { setContainer(ref); }}>
             <BodyContent />

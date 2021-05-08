@@ -98,8 +98,9 @@ export const StyledProjectPage = styled.nav`
 
     .tag:hover {
         background-color: #6f86ab;
-        transition: padding .5s;
-        padding: 8px;
+        transition: background-color 1s;
+        color: white;
+        transition: color 1s;
     }
 
     ul {
