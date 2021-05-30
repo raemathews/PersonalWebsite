@@ -8,8 +8,8 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-    <img className="carousel-img" src={portrait} onDragStart={handleDragStart} />,
-    <img className="carousel-img" src={selfportrait} onDragStart={handleDragStart} />,
+    <img alt="" className="carousel-img" src={portrait} onDragStart={handleDragStart} />,
+    <img alt="" className="carousel-img" src={selfportrait} onDragStart={handleDragStart} />,
 ];
 
 export const Portrait = () => {

@@ -14,7 +14,7 @@ export default class FloatingButton extends React.Component {
                     <a href={this.props.link} target="_blank">
                         <svg width="80" height="40"
                             xmlns="http://www.w3.org/2000/svg">
-                            <image href={github} height="40" width="80" />
+                            <image alt="" href={github} height="40" width="80" />
                         </svg>
                     </a>
                 </div>

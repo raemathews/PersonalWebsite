@@ -1,10 +1,7 @@
 import React from 'react';
-import PageLoader from '../PageLoader';
 import { StyledProjectPage } from './ProjectPage.styled.js';
-import beanpot from '../../images/beanpot.png';
 import LineGraphComp from './LineGraphComp';
 import FloatingButton from '../FloatingButton';
-import login from '../../images/login.PNG';
 import ux from '../../images/HBPFigma.png';
 
 
@@ -50,7 +47,7 @@ const Hackbeanpot2021 = () => {
                 </div>
                 <div className="grid-container">
                     <div className="img-container"> 
-                        <img src={ux} />
+                        <img alt="" src={ux} />
                     </div>
                     <LineGraphComp className="graph" />
                 </div>

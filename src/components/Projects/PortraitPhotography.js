@@ -11,10 +11,10 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 const handleDragStart = (e) => e.preventDefault();
 
 const items = [
-    <img className="carousel-img" src={p1} onDragStart={handleDragStart} />,
-    <img className="carousel-img" src={p2} onDragStart={handleDragStart} />,
-    <img className="carousel-img" src={p3} onDragStart={handleDragStart} />,
-    <img className="carousel-img" src={p4} onDragStart={handleDragStart} />
+    <img alt="" className="carousel-img" src={p1} onDragStart={handleDragStart} />,
+    <img alt="" className="carousel-img" src={p2} onDragStart={handleDragStart} />,
+    <img alt="" className="carousel-img" src={p3} onDragStart={handleDragStart} />,
+    <img alt="" className="carousel-img" src={p4} onDragStart={handleDragStart} />
 ];
 
 

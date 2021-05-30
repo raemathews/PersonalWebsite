@@ -14,22 +14,22 @@ export function BasicCard({ imgSource, title, subtitle, medium, dimensions }) {
         <AnimationWrapper animationConfig="gentle">
             <StyledCard>
                 {imgSource == "lorikeet" ?
-                    <img className='cardImage' src={lorikeet} /> : null
+                    <img alt="" className='cardImage' src={lorikeet} /> : null
                 }
                 {imgSource == "portrait" ?
-                    <img className='cardImage' src={portrait} /> : null
+                    <img alt="" className='cardImage' src={portrait} /> : null
                 }
                 {imgSource == "cezanne" ?
-                    <img className='cardImage' src={cezanne} /> : null
+                    <img alt="" className='cardImage' src={cezanne} /> : null
                 }
                 {imgSource == "HackBeanpot" ?
-                    <img className='cardImage' src={hackbeanpot} /> : null
+                    <img alt="" className='cardImage' src={hackbeanpot} /> : null
                 }
                 {imgSource == "kyle" ?
-                    <img className='cardImage' src={kyle} /> : null
+                    <img alt="" className='cardImage' src={kyle} /> : null
                 }
                 {imgSource == "bird" ?
-                    <img className='cardImage' src={bird} /> : null
+                    <img alt="" className='cardImage' src={bird} /> : null
                 }
                 <h1 className="title">{title}</h1>
                 <hr />
