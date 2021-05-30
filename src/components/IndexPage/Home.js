@@ -4,8 +4,6 @@ import Hero from './Hero';
 import SlideOneIntro from './SlideOneIntro';
 import PageLoader from '../PageLoader';
 import { StyledHome } from './Home.styled.js';
-import {Controller, Scene} from "react-scrollmagic";
-import gsap from 'react-gsap';
 
 function useLoadingAnimation() {
   const [isAnimation, setIsAnimation] = useState(true);
