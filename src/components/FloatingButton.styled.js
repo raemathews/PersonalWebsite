@@ -18,9 +18,10 @@ export const StyledFloatingButton = styled.nav`
 
   .button:hover {
     background-color: #ff9800 !important;
-    transition: background .5s ease-out;
-    animation: shake .6s;
-    animation-iteration-count: infinite;
+    transition: background .5s ease-in-out;
+    padding: 18px;
+    transition: padding .5s ease-in-out;
+
   }
 
 `;

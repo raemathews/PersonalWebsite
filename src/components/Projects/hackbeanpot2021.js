@@ -5,6 +5,7 @@ import beanpot from '../../images/beanpot.png';
 import LineGraphComp from './LineGraphComp';
 import FloatingButton from '../FloatingButton';
 import login from '../../images/login.PNG';
+import ux from '../../images/HBPFigma.png';
 
 
 
@@ -48,6 +49,9 @@ const Hackbeanpot2021 = () => {
                     </div>
                 </div>
                 <div className="grid-container">
+                    <div className="img-container"> 
+                        <img src={ux} />
+                    </div>
                     <LineGraphComp className="graph" />
                 </div>
                 <FloatingButton link="https://github.com/raemathews/HackBeanpot2021" />

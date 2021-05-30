@@ -6,6 +6,7 @@ export const StyledChart = styled.a`
     width: 100%;
     min-width: 500px;
     min-height: 350px;
+    max-height: 450px;
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;

@@ -9,12 +9,13 @@ import Home from './IndexPage/Home';
 import Contact from './ContactPage/Contact';
 import Resume from './ResumePage/Resume';
 import PageLoader from './PageLoader';
-import Lorikeet from './ArtPage/Lorikeet';
-import Portrait from './ArtPage/Portrait';
-import Cezanne from './ArtPage/Cezanne';
+import {Lorikeet} from './Projects/Lorikeet';
+import {Cezanne} from './Projects/Cezanne';
 import Error from './Error';
 import Projects from './Projects/Projects';
 import Hackbeanpot2021 from './Projects/hackbeanpot2021';
+import {Portrait} from './Projects/SelfPortrait';
+import {Portraits} from './Projects/PortraitPhotography';
 
 const navList = [
   { name: "home", path: '/' },
@@ -38,10 +39,11 @@ function App() {
               <Route path="/projects" component={Projects} />
               <Route path="/test" component={PageLoader} />
               <Route path="/contact" component={Contact} />
-              <Route path="/projects/art-lorikeet" component={Lorikeet} />
-              <Route path="/projects/art-self-portrait" component={Portrait} />
-              <Route path="/projects/art/cezanne" component={Cezanne} />
+              <Route path="/lorikeet" component={Lorikeet} />
+              <Route path="/self-portrait" component={Portrait} />
+              <Route path="/cezanne" component={Cezanne} />
               <Route path="/hackbeanpot2021" component={Hackbeanpot2021} />
+              <Route path="/portrait-photography" component={Portraits} />
               <Route component={Error} />
             </Switch>
           </div>

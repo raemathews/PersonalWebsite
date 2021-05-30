@@ -9,7 +9,7 @@ import PageLoader from '../PageLoader';
 
 //card elements for programming projects
 const codeCards = <div className="grid-container">
-    <NavLink className="lorikeet" activeClassName="active" exact to={'./hackbeanpot2021'} >
+    <NavLink className="beanpot" activeClassName="active" exact to={'./hackbeanpot2021'} >
         <BasicCard className="grid-item" imgSource="HackBeanpot" title="Vaccine Waste" medium="Hack Beanpot 2021"
             dimensions="Interactive web application that tracks wasted COVID-19 vaccine doses" />
     </ NavLink>
@@ -37,12 +37,12 @@ const artCards = <div className="grid-container">
 
 //card elements for photography collections
 const photoCards = <div className="grid-container">
-    <NavLink className="portraits" activeClassName="active" exact to={'./portraits'} >
+    <NavLink className="portraits" activeClassName="active" exact to={'./portrait-photography'} >
         <BasicCard className="grid-item" imgSource="kyle" title="Portrait Work" medium="photography"/>
     </ NavLink>
 
     <NavLink className="animals" activeClassName="active" exact to={'./animals'} >
-        <BasicCard className="grid-item" imgSource="bird" title="Animal Photography" medium="photography"/>
+        <BasicCard className="grid-item" imgSource="bird" title="Animals" medium="photography"/>
     </ NavLink>
 
 </div>;

@@ -3,9 +3,9 @@ import { StyledCard } from './BasicCard.styled';
 import { AnimationWrapper } from 'react-hover-animation';
 import portrait from '../images/portrait.jpg';
 import lorikeet from '../images/lorikeet.jpg'
-import cezanne from '../images/cezanne.jpg';
-import hackbeanpot from '../images/HackBeanpot.png';
-import kyle from '../images/Kyle.png';
+import cezanne from '../images/cezannecrop.jpg';
+import hackbeanpot from '../images/HBPFigmaCropped.png';
+import kyle from '../images/KyleCropped.png';
 import bird from '../images/birdedit.JPG';
 
 

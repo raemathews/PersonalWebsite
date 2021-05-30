@@ -52,6 +52,10 @@ body {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+@keyframes grow {
+  100% { padding: 15px;}
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
